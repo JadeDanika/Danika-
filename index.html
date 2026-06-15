@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Danika</title>
+    <title>Danika - Descargar Alpha</title>
     <meta name="description" content="Un gestor de mods para dota 2 basado unicamente en operar de manera local y promoveer el moding para tener mas contenido oficial a traves de workshoptools de dota 2">
-    <meta name="keywords" content="Danika, dota 2 mods, dota mods, skinchanger, dota 2 skinchanger">
+    <meta name="keywords" content="Danika, dota 2 mods, dota mods, skinchanger, dota 2 skinchanger, download danika dota">
     
     <link rel="icon" type="image/png" href="resources/logo.png">
     
@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
     <script src="https://cdn.tailwindcss.com"></script>
     
     <script>
@@ -246,7 +245,7 @@
             
             <div class="animate-hero-buttons w-full max-w-md px-4 flex flex-col gap-4">
                 <button onclick="startDownloadFlow()" class="w-full bg-dota-fuchsia text-white px-8 py-4 rounded-md font-bold text-lg glow-button flex items-center justify-center gap-2">
-                    <i class="ph-bold ph-download-simple text-xl"></i> Descargar para Windows
+                    <i class="ph-bold ph-download-simple text-xl animate-bounce"></i> Descargar Alpha
                 </button>
                 
                 <a href="info.html" class="w-full outline-button bg-white/5 border border-white/10 text-white px-8 py-4 rounded-md font-bold text-base sm:text-lg flex items-center justify-center gap-2 transition-all hover:border-dota-fuchsia hover:bg-dota-fuchsia/10">
@@ -256,7 +255,7 @@
 
             <div class="animate-hero-tags mt-12 flex items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-dota-muted flex-wrap px-4">
                 <span class="flex items-center gap-1"><i class="ph-fill ph-warning-circle text-dota-fuchsia"></i> Modding Responsable</span>
-                <span class="flex items-center gap-1"><i class="ph-fill ph-check-circle text-white"></i> Actualizaciones Automáticas</span>
+                <span class="flex items-center gap-1"><i class="ph-fill ph-check-circle text-white"></i> Versión de Pruebas Alpha</span>
                 <span class="flex items-center gap-1"><i class="ph-fill ph-shield-slash text-dota-muted"></i> Sin Inyección de Memoria</span>
             </div>
         </div>
@@ -372,6 +371,7 @@
         </div>
     </footer>
 
+    <!-- Términos de Uso Modal -->
     <div id="terms-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center transition-opacity duration-300 opacity-0 px-4">
         <div class="absolute inset-0 bg-black/70 backdrop-blur-md" onclick="closeModal('terms-modal')"></div>
         <div class="modal-content relative bg-dota-gray border border-white/10 rounded-xl shadow-[0_0_40px_rgba(255,42,117,0.15)] w-full max-w-3xl max-h-[85vh] flex flex-col transform scale-95 transition-transform duration-300">
@@ -386,9 +386,9 @@
             <div class="p-4 sm:p-6 overflow-y-auto text-dota-muted text-sm leading-relaxed space-y-4">
                 <p>Bienvenido a <strong class="text-white">Danika</strong>, un software gestor de mods visuales para Dota 2.</p>
                 
-                <h4 class="text-white font-bold text-base mt-4">1. Naturaleza del Software y Riesgo Inherente (Wavebans)</h4>
+                <h4 class="text-white font-bold text-base mt-4">1. Naturaleza del Software y Riesgo de Pruebas Alpha (Wavebans)</h4>
                 <p>Danika opera modificando temporalmente los archivos visuales locales (VPK) del cliente de juego. Es imprescindible que el usuario comprenda y acepte que <strong class="text-dota-fuchsia">absolutamente todas las herramientas de modding actuales para Dota 2 violan técnicamente el Acuerdo de Suscriptor a Steam (TOS)</strong> dictado por Valve Corporation.</p>
-                <p>Aunque Danika no inyecta rutinas en la memoria RAM para otorgar ventajas competitivas (no es un "cheat" o "hack"), la alteración de los archivos del cliente siempre opera en una zona gris de moderación. Por lo tanto, <strong class="text-white">no asumimos ninguna responsabilidad legal ni moral</strong> si la cuenta de Steam del usuario es objeto de suspensiones, bloqueos por VAC o castigos masivos (conocidos como "Wavebans"). El uso de Danika corre 100% bajo el riesgo del usuario.</p>
+                <p>Esta es una versión <strong class="text-white">Alpha</strong> en desarrollo temprano. Aunque Danika no inyecta rutinas en la memoria RAM para otorgar ventajas competitivas (no es un "cheat" o "hack"), la alteración de los archivos del cliente siempre opera en una zona gris de moderación. Por lo tanto, <strong class="text-white">no asumimos ninguna responsabilidad legal ni moral</strong> si la cuenta de Steam del usuario es objeto de suspensiones, bloqueos por VAC o castigos masivos (conocidos como "Wavebans"). El uso de Danika corre 100% bajo el riesgo del usuario.</p>
                 
                 <h4 class="text-white font-bold text-base mt-4">2. Cumplimiento de Normativas (Cease and Desist)</h4>
                 <p>Respetamos profundamente la propiedad intelectual de Valve Corporation. Si en cualquier momento Valve emite una orden de cese y desistimiento (Cease and Desist) formal solicitando el retiro de este software, <strong class="text-dota-fuchsia">la orden será acatada de manera inmediata e irrevocable</strong>. En dicho escenario, los servidores se desconectarán, el software dejará de operar y esta página web será clausurada.</p>
@@ -407,6 +407,7 @@
         </div>
     </div>
 
+    <!-- Política de Privacidad Modal -->
     <div id="privacy-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center transition-opacity duration-300 opacity-0 px-4">
         <div class="absolute inset-0 bg-black/70 backdrop-blur-md" onclick="closeModal('privacy-modal')"></div>
         <div class="modal-content relative bg-dota-gray border border-white/10 rounded-xl shadow-[0_0_40px_rgba(255,42,117,0.15)] w-full max-w-3xl max-h-[85vh] flex flex-col transform scale-95 transition-transform duration-300">
@@ -443,12 +444,17 @@
         </div>
     </div>
 
+    <!-- Toast Notification (Reemplaza alert) -->
     <div id="toast-notification" class="fixed bottom-5 right-5 z-[200] transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 bg-dota-gray border border-dota-fuchsia/50 shadow-[0_0_20px_rgba(255,42,117,0.3)] rounded-lg px-6 py-4 flex items-center gap-3">
         <i class="ph-fill ph-info text-dota-fuchsia text-2xl"></i>
         <span id="toast-message" class="text-white font-medium text-sm sm:text-base"></span>
     </div>
 
     <script>
+        
+        // URL Oficial de descarga de la Alpha de Danika
+        const ALPHA_DOWNLOAD_URL = "https://github.com/JadeDanika/Danika-/releases/download/alpha/danikaalpha.rar";
+
         // Función para mostrar notificación toast (reemplaza alert)
         function showToast(message) {
             const toast = document.getElementById('toast-notification');
@@ -459,7 +465,7 @@
             
             setTimeout(() => {
                 toast.classList.add('translate-y-20', 'opacity-0');
-            }, 3500);
+            }, 5000); // 5 segundos para que sea bien legible
         }
 
         // Funciones para el flujo de Descarga en Cascada
@@ -481,10 +487,14 @@
             }, 300);
         }
 
+        // Ejecuta la descarga real de la Alpha
         function acceptPrivacyAndDownload() {
             closeModal('privacy-modal');
             setTimeout(() => {
-                showToast("¡Gracias por confiar en Danika! Pero aún no está disponible para su uso.");
+                showToast("¡Gracias por tu apoyo! Iniciando la descarga de Danika Alpha...");
+                
+                // Ejecución de la descarga del enlace de GitHub proporcionado
+                window.location.href = ALPHA_DOWNLOAD_URL;
             }, 350);
         }
 
@@ -501,11 +511,11 @@
             openModal(id);
         }
 
-        // Lógica Genérica de Modales
+        // Lógica Genérica de Modales con animaciones
         function openModal(id) {
             const modal = document.getElementById(id);
             modal.classList.remove('hidden');
-            void modal.offsetWidth; // Trigger reflow
+            void modal.offsetWidth; // Trigger reflow para iniciar animación CSS
             modal.classList.add('opacity-100');
             modal.querySelector('.modal-content').classList.add('scale-100');
             modal.querySelector('.modal-content').classList.remove('scale-95');
@@ -525,6 +535,7 @@
         }
 
         document.addEventListener("DOMContentLoaded", function() {
+            
             // Forzar al navegador a que inicie siempre en el tope al recargar o regresar en el historial
             if ('scrollRestoration' in history) {
                 history.scrollRestoration = 'manual';
