@@ -201,7 +201,7 @@
         </div>
 
         <div class="marquee-container reveal" style="animation-delay: 0.4s;">
-            <!-- Multiplicamos las imágenes en dos bloques idénticos para cubrir cualquier monitor Ultrawide/4K -->
+            <!-- Multiplicamos las imágenes en dois bloques idénticos para cubrir cualquier monitor Ultrawide/4K -->
             <div class="marquee-content">
                 
                 <!-- GRUPO 1: El contenido principal (Se repetirá 4 veces para asegurar ancho completo) -->
@@ -305,8 +305,18 @@
         }
 
         function descargarRecursos() {
-            // Aquí pones la lógica real o el enlace de descarga de los recursos
             showToast("Iniciando descarga de recursos...");
+            
+            // URL directa del archivo .rar en los releases de GitHub
+            const urlDescarga = "https://github.com/JadeDanika/Danika-/releases/download/heroes/heroes.rar";
+            
+            // Creamos un elemento <a> invisible para forzar la descarga en el navegador
+            const link = document.createElement('a');
+            link.href = urlDescarga;
+            link.setAttribute('download', 'heroes.rar');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     </script>
 </body>
